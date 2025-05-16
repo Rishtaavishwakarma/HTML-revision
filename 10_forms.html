@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .form1 {
+            padding: 1rem;
+            border-radius: 2rem;
+            width: 40%;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            align-items: center;
+            flex-direction: column;
+            background-color: aqua;
+            margin-bottom: 5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <form class="form1" action="">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name">
+        <input type="email" name="" id="">
+        <input type="number" name="" id="">
+        <input type="file" name="" id="">
+        <input type="checkbox" name="" id="">
+        <div>
+            <label for="male">male</label>
+            <input type="radio" name="gender" value="male" id="male">
+            <label for="female">female</label>
+            <input type="radio" name="gender" value="female" id="female">
+        </div>
+        <button type="submit">submit</button>
+        <button type="reset">Reset</button>
+    </form>
+    <form class="form1" action="">
+        <select name="car" id="">
+            <option value="">select car</option>
+            <option value="volvo">Volvo</option>
+            <option value="toyota">toyota</option>
+            <option value="Mercedes">Mercedes</option>
+            <option value="BMW">BMW</option>
+        </select>
+    </form>
+    <form class="form1" action="">
+        <input list="browser" type="text" placeholder="choose your browser">
+        <datalist id="browser">
+            <option value="chrome"></option>
+            <option value="edge"></option>
+            <option value="safari"></option>
+        </datalist>
+        <input type="text" autofocus>
+        <input type="submit">
+    </form>
+
+    <form class="form1" action="" oninput="x.value= parseInt(a.value)+parseInt(b.value)">
+        0
+        <input type="range" name="a" value="50">
+        100
+        <input type="range" name="b" value="50">
+        <output name="x"></output>
+    </form>
+
+</body>
+
+</html>
